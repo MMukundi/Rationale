@@ -1,10 +1,16 @@
-import { Compute as cp} from './compute';
-import { Comprehend as ch } from './comprehend';
+// import { Compute as cp} from './compute';
+// import { Comprehend as ch } from './comprehend';
 
 export namespace Rationale {
     export const version = "0.01"
-    export const Comprehend = ch;
-    export const Compute = cp;
+    // export const Comprehend = ch;
+    // export const Compute = cp;
+    export namespace Comprehend {
+        export function isTrue(b: boolean): boolean {
+            return b;
+        }
+    }
+
 }
 console.log("Rationale built")
 
